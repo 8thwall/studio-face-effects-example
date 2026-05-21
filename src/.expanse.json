@@ -1,0 +1,384 @@
+{
+  "objects": {
+    "492cfe2c-9334-4a9c-a48a-be80132af9fb": {
+      "id": "492cfe2c-9334-4a9c-a48a-be80132af9fb",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+      "components": {},
+      "light": {
+        "type": "directional"
+      },
+      "name": "Directional Light",
+      "order": 0.6785011504707911
+    },
+    "87113aa9-b52e-4fba-b937-63fbec393fa9": {
+      "id": "87113aa9-b52e-4fba-b937-63fbec393fa9",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+      "components": {},
+      "light": {
+        "type": "ambient",
+        "intensity": 1
+      },
+      "name": "Ambient Light",
+      "order": 1.2491958667939822
+    },
+    "52ba8a86-a459-4df8-b954-a570e85e0484": {
+      "id": "52ba8a86-a459-4df8-b954-a570e85e0484",
+      "position": [
+        0,
+        2,
+        3.211226375221431
+      ],
+      "rotation": [
+        -0.0004637899966810532,
+        0.9978406073902779,
+        -0.06529682289718859,
+        -0.007087458033270938
+      ],
+      "scale": [
+        1.0000000000000002,
+        1,
+        1.0000000000000004
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+      "components": {},
+      "name": "Camera",
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "xrCameraType": "face",
+          "phone": "AR",
+          "desktop": "AR",
+          "headset": "disabled"
+        }
+      },
+      "order": 2.1029089692509704
+    },
+    "dc18fccd-441f-4153-a2ce-e74409ee7ff6": {
+      "id": "dc18fccd-441f-4153-a2ce-e74409ee7ff6",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+      "components": {
+        "a3b328c7-3934-49bd-8019-bb5dd250794f": {
+          "id": "a3b328c7-3934-49bd-8019-bb5dd250794f",
+          "name": "enable-glasses-on-find",
+          "parameters": {
+            "glasses": {
+              "type": "entity",
+              "id": "3fef95be-d8d6-49ef-a464-bf383bee6cfb"
+            }
+          }
+        }
+      },
+      "face": {
+        "id": 1,
+        "addAttachmentState": false
+      },
+      "name": "Face",
+      "order": 3.2894121695214844
+    },
+    "3fef95be-d8d6-49ef-a464-bf383bee6cfb": {
+      "id": "3fef95be-d8d6-49ef-a464-bf383bee6cfb",
+      "position": [
+        0,
+        0.017866510992292195,
+        0.668909239299039
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        -6.123233995736769e-17
+      ],
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "geometry": null,
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "dc18fccd-441f-4153-a2ce-e74409ee7ff6",
+      "components": {
+        "2e832d2b-fa06-47f3-bfe9-7be775dbc3f4": {
+          "id": "2e832d2b-fa06-47f3-bfe9-7be775dbc3f4",
+          "name": "position-animation",
+          "parameters": {
+            "toZ": 0.669,
+            "fromY": 5,
+            "loop": false,
+            "duration": 3000
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/stereo-glasses.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Glasses",
+      "order": 11.642714348237924,
+      "shadow": {
+        "castShadow": true
+      }
+    },
+    "80bcaf4f-120e-416e-af30-4002371378be": {
+      "id": "80bcaf4f-120e-416e-af30-4002371378be",
+      "position": [
+        0.226052774084667,
+        -0.009377442791057788,
+        0.021379035861428197
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        6.123233995736766e-17
+      ],
+      "scale": [
+        0.4,
+        0.25,
+        0.4
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#ff0000",
+        "opacity": 0.3
+      },
+      "parentId": "3fef95be-d8d6-49ef-a464-bf383bee6cfb",
+      "components": {},
+      "name": "Red Lens",
+      "order": 6.430630017608969
+    },
+    "bffdd804-c473-4673-82da-aed1146ef47d": {
+      "id": "bffdd804-c473-4673-82da-aed1146ef47d",
+      "position": [
+        -0.2623022156733653,
+        -0.014308282025058183,
+        0.021379035861428086
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        6.123233995736766e-17
+      ],
+      "scale": [
+        0.4,
+        0.25,
+        0.4
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#0011ff",
+        "opacity": 0.3
+      },
+      "parentId": "3fef95be-d8d6-49ef-a464-bf383bee6cfb",
+      "components": {},
+      "name": "Blue Lens",
+      "order": 7.602512809001998
+    },
+    "5d4372cb-3a06-43be-997c-76187f35e77e": {
+      "id": "5d4372cb-3a06-43be-997c-76187f35e77e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -1,
+        0,
+        6.123233995736766e-17
+      ],
+      "scale": [
+        0.96,
+        0.96,
+        0.96
+      ],
+      "geometry": null,
+      "material": {
+        "type": "hider"
+      },
+      "parentId": "dc18fccd-441f-4153-a2ce-e74409ee7ff6",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/face-hider.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Face Hider",
+      "order": 10.318435324721452,
+      "shadow": {
+        "receiveShadow": true
+      }
+    },
+    "c7231d72-b7a3-44ea-b5f5-bb9ea9572ed9": {
+      "id": "c7231d72-b7a3-44ea-b5f5-bb9ea9572ed9",
+      "position": [
+        0,
+        2,
+        -2.5468804365107705
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+      "components": {
+        "f31ef85b-8c9e-41ca-817f-a53bb7000a2d": {
+          "id": "f31ef85b-8c9e-41ca-817f-a53bb7000a2d",
+          "name": "hide-on-ready",
+          "parameters": {}
+        }
+      },
+      "ui": {
+        "flexDirection": "row",
+        "width": "100%",
+        "height": "100%",
+        "type": "overlay",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Loading Screen",
+      "order": 4.4268951582618845
+    },
+    "2f4186f0-5825-4b3c-868a-24bc7945a328": {
+      "id": "2f4186f0-5825-4b3c-868a-24bc7945a328",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c7231d72-b7a3-44ea-b5f5-bb9ea9572ed9",
+      "components": {},
+      "ui": {
+        "width": 200,
+        "height": 200,
+        "text": "Camera Loading",
+        "color": "#ffffff",
+        "fontSize": 24,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Roboto"
+        },
+        "textAlign": "center",
+        "verticalTextAlign": "center"
+      },
+      "name": "Text",
+      "order": 1.9632252822400198
+    }
+  },
+  "spaces": {
+    "84028e73-ee70-412d-b8d4-c09bf07c655c": {
+      "id": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+      "name": "Default",
+      "activeCamera": "52ba8a86-a459-4df8-b954-a570e85e0484"
+    }
+  },
+  "entrySpaceId": "84028e73-ee70-412d-b8d4-c09bf07c655c",
+  "runtimeVersion": {
+    "type": "version",
+    "level": "major",
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  }
+}
